@@ -7,7 +7,7 @@ import { JobDetails } from '@/components/jobs/JobDetails';
 import { JobListingSkeleton } from '@/components/jobs/JobListingSkeleton';
 import { JobComparison } from '@/components/jobs/JobComparison';
 import { JobAlert } from '@/components/jobs/JobAlert';
-import { SAMPLE_JOBS, Job } from '@/data/jobs';
+import { SAMPLE_JOBS, Job } from '../../data/jobs';
 
 export default function OpportunitiesPage() {
   const [searchQuery, setSearchQuery] = useState('');
