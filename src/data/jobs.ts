@@ -12,6 +12,7 @@ export interface Job {
   companyRating: number;
   postedDate: string;
   isUrgent: boolean;
+  type: 'Full-time' | 'Part-time' | 'Contract' | 'Internship';
 }
 
 export const SAMPLE_JOBS: Job[] = [
@@ -28,7 +29,8 @@ export const SAMPLE_JOBS: Job[] = [
     isRemote: false,
     companyRating: 4.8,
     postedDate: "2 days ago",
-    isUrgent: true
+    isUrgent: true,
+    type: "Full-time"
   },
   {
     id: "2",
@@ -43,7 +45,8 @@ export const SAMPLE_JOBS: Job[] = [
     isRemote: true,
     companyRating: 4.6,
     postedDate: "3 days ago",
-    isUrgent: false
+    isUrgent: false,
+    type: "Full-time"
   },
   {
     id: "3",
@@ -58,7 +61,8 @@ export const SAMPLE_JOBS: Job[] = [
     isRemote: false,
     companyRating: 4.7,
     postedDate: "5 days ago",
-    isUrgent: true
+    isUrgent: true,
+    type: "Full-time"
   },
   {
     id: "4",
@@ -112,7 +116,8 @@ export const SAMPLE_JOBS: Job[] = [
       "Final team interview"
     ],
     isNew: true,
-    isUrgent: false
+    isUrgent: false,
+    type: "Full-time"
   },
   {
     id: "5",
@@ -165,7 +170,8 @@ export const SAMPLE_JOBS: Job[] = [
       "Final interview with director"
     ],
     isNew: true,
-    isUrgent: true
+    isUrgent: true,
+    type: "Full-time"
   },
   {
     id: "6",
@@ -218,7 +224,8 @@ export const SAMPLE_JOBS: Job[] = [
       "Final presentation"
     ],
     isNew: true,
-    isUrgent: false
+    isUrgent: false,
+    type: "Full-time"
   },
   {
     id: "7",
@@ -271,7 +278,8 @@ export const SAMPLE_JOBS: Job[] = [
       "Final discussion"
     ],
     isNew: false,
-    isUrgent: true
+    isUrgent: true,
+    type: "Full-time"
   },
   {
     id: "8",
@@ -324,7 +332,8 @@ export const SAMPLE_JOBS: Job[] = [
       "Final presentation"
     ],
     isNew: false,
-    isUrgent: false
+    isUrgent: false,
+    type: "Full-time"
   },
   {
     id: "9",
@@ -377,7 +386,8 @@ export const SAMPLE_JOBS: Job[] = [
       "Final presentation"
     ],
     isNew: false,
-    isUrgent: true
+    isUrgent: true,
+    type: "Full-time"
   },
   {
     id: "10",
@@ -430,7 +440,8 @@ export const SAMPLE_JOBS: Job[] = [
       "Final presentation"
     ],
     isNew: true,
-    isUrgent: false
+    isUrgent: false,
+    type: "Full-time"
   },
   {
     id: "11",
@@ -483,7 +494,8 @@ export const SAMPLE_JOBS: Job[] = [
       "Final discussion"
     ],
     isNew: false,
-    isUrgent: true
+    isUrgent: true,
+    type: "Full-time"
   },
   {
     id: "12",
@@ -536,7 +548,8 @@ export const SAMPLE_JOBS: Job[] = [
       "Final presentation"
     ],
     isNew: true,
-    isUrgent: false
+    isUrgent: false,
+    type: "Full-time"
   },
   {
     id: "13",
@@ -589,7 +602,8 @@ export const SAMPLE_JOBS: Job[] = [
       "Final discussion"
     ],
     isNew: false,
-    isUrgent: true
+    isUrgent: true,
+    type: "Full-time"
   },
   {
     id: "14",
@@ -642,7 +656,8 @@ export const SAMPLE_JOBS: Job[] = [
       "Final discussion"
     ],
     isNew: false,
-    isUrgent: false
+    isUrgent: false,
+    type: "Full-time"
   },
   {
     id: "15",
@@ -695,6 +710,7 @@ export const SAMPLE_JOBS: Job[] = [
       "Final discussion"
     ],
     isNew: true,
-    isUrgent: false
+    isUrgent: false,
+    type: "Full-time"
   }
 ]; 
