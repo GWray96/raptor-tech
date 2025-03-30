@@ -1,0 +1,397 @@
+export interface Job {
+  id: string;
+  title: string;
+  company: string;
+  location: string;
+  salary: string;
+  type: string;
+  postedDate: string;
+  skills: string[];
+  isNew?: boolean;
+  isUrgent?: boolean;
+  description: string;
+  requirements: string[];
+  benefits: string[];
+  responsibilities: string[];
+  workHours: string;
+  workEnvironment: string;
+  teamSize: string;
+  reportingStructure: string;
+  growthOpportunities: string[];
+  companyCulture: string;
+  applicationProcess: string[];
+}
+
+export const SAMPLE_JOBS: Job[] = [
+  {
+    id: "1",
+    title: "Senior Full Stack Developer",
+    company: "TechCorp Solutions",
+    location: "San Francisco, CA",
+    salary: "$120,000 - $160,000",
+    type: "Full-time",
+    postedDate: "2 days ago",
+    isNew: true,
+    skills: ["React", "Node.js", "TypeScript", "AWS", "MongoDB", "Docker"],
+    description: "We are seeking an experienced Senior Full Stack Developer to join our growing team. This role will be responsible for developing and maintaining our core platform, which serves millions of users worldwide. The ideal candidate will have a strong background in modern web technologies and a passion for creating scalable, maintainable solutions.",
+    requirements: [
+      "5+ years of experience in full-stack development",
+      "Strong proficiency in React and Node.js",
+      "Experience with TypeScript and modern JavaScript",
+      "Knowledge of cloud platforms (AWS, GCP, or Azure)",
+      "Experience with microservices architecture",
+      "Strong understanding of database design and optimization",
+      "Experience with CI/CD pipelines and DevOps practices",
+      "Excellent problem-solving and communication skills"
+    ],
+    benefits: [
+      "Competitive salary with annual performance bonuses",
+      "Comprehensive health insurance (medical, dental, vision)",
+      "401(k) matching up to 6%",
+      "Flexible work hours and remote work options",
+      "Professional development budget",
+      "Annual team retreats and company events",
+      "Stock options and equity compensation",
+      "Unlimited paid time off",
+      "Home office setup allowance",
+      "Mental health and wellness programs"
+    ],
+    responsibilities: [
+      "Design and implement new features and functionality",
+      "Optimize application performance and scalability",
+      "Write clean, maintainable, and testable code",
+      "Participate in code reviews and technical discussions",
+      "Debug and resolve complex technical issues",
+      "Collaborate with cross-functional teams",
+      "Mentor junior developers",
+      "Contribute to technical documentation"
+    ],
+    workHours: "Flexible hours with core hours of 10 AM - 4 PM PST",
+    workEnvironment: "Modern office in downtown San Francisco with remote work options",
+    teamSize: "Engineering team of 25+ developers",
+    reportingStructure: "Reports to the Engineering Manager, works closely with Product and Design teams",
+    growthOpportunities: [
+      "Technical leadership track available",
+      "Opportunity to specialize in specific areas (Frontend, Backend, DevOps)",
+      "Regular training and certification opportunities",
+      "Conference attendance and speaking opportunities",
+      "Open source contribution opportunities"
+    ],
+    companyCulture: "Fast-paced, collaborative environment with emphasis on innovation and continuous learning",
+    applicationProcess: [
+      "Initial screening call with HR",
+      "Technical assessment",
+      "Technical interview with team members",
+      "System design discussion",
+      "Final interview with engineering leadership",
+      "Offer and team dinner"
+    ]
+  },
+  {
+    id: "2",
+    title: "Machine Learning Engineer",
+    company: "AI Research Labs",
+    location: "Boston, MA",
+    salary: "$130,000 - $170,000",
+    type: "Full-time",
+    postedDate: "1 week ago",
+    isUrgent: true,
+    skills: ["Python", "TensorFlow", "PyTorch", "Computer Vision", "NLP", "Deep Learning"],
+    description: "Join our innovative AI team to develop cutting-edge machine learning solutions. You will work on challenging problems in computer vision and natural language processing, collaborating with researchers and engineers to push the boundaries of AI technology.",
+    requirements: [
+      "MS or PhD in Computer Science, Mathematics, or related field",
+      "3+ years of experience in machine learning or deep learning",
+      "Strong programming skills in Python",
+      "Experience with deep learning frameworks (TensorFlow, PyTorch)",
+      "Knowledge of computer vision and NLP techniques",
+      "Strong mathematical background in linear algebra and statistics",
+      "Experience with distributed computing and GPU optimization",
+      "Published research papers or contributions to ML community (preferred)"
+    ],
+    benefits: [
+      "Competitive salary and equity package",
+      "Full healthcare coverage",
+      "401(k) with generous matching",
+      "Research conference attendance",
+      "Flexible work arrangements",
+      "Education reimbursement",
+      "Gym membership",
+      "Catered lunches",
+      "Relocation assistance",
+      "Annual research budget"
+    ],
+    responsibilities: [
+      "Develop and implement machine learning models",
+      "Optimize model performance and scalability",
+      "Research and implement state-of-the-art AI techniques",
+      "Collaborate with research teams on publications",
+      "Build and maintain ML infrastructure",
+      "Mentor junior ML engineers",
+      "Contribute to open-source ML projects",
+      "Present findings at conferences"
+    ],
+    workHours: "Flexible schedule with research focus periods",
+    workEnvironment: "Research lab setting with access to high-performance computing resources",
+    teamSize: "15 researchers and engineers",
+    reportingStructure: "Reports to Head of AI Research",
+    growthOpportunities: [
+      "Lead research initiatives",
+      "Publication opportunities",
+      "Conference presentations",
+      "Patent development",
+      "Research grant participation"
+    ],
+    companyCulture: "Research-driven environment focused on innovation and academic collaboration",
+    applicationProcess: [
+      "Resume and research paper review",
+      "Technical screening",
+      "Research presentation",
+      "Team interviews",
+      "Final interview with leadership"
+    ]
+  },
+  {
+    id: "3",
+    title: "DevOps Engineer",
+    company: "CloudScale Systems",
+    location: "Remote",
+    salary: "$110,000 - $150,000",
+    type: "Full-time",
+    postedDate: "3 days ago",
+    isNew: true,
+    skills: ["AWS", "Kubernetes", "Docker", "Terraform", "CI/CD", "Python"],
+    description: "We are looking for a skilled DevOps Engineer to help us build and maintain our cloud infrastructure. You will be responsible for implementing automation, improving deployment processes, and ensuring system reliability.",
+    requirements: [
+      "4+ years of experience in DevOps or Site Reliability Engineering",
+      "Strong experience with AWS services",
+      "Expertise in container orchestration (Kubernetes)",
+      "Experience with Infrastructure as Code (Terraform)",
+      "Strong scripting skills (Python, Bash)",
+      "Knowledge of monitoring and logging systems",
+      "Experience with CI/CD pipelines",
+      "Strong problem-solving abilities"
+    ],
+    benefits: [
+      "Competitive salary",
+      "Remote work flexibility",
+      "Health and dental insurance",
+      "401(k) matching",
+      "Learning and development budget",
+      "Home office stipend",
+      "Internet reimbursement",
+      "Annual company retreat"
+    ],
+    responsibilities: [
+      "Design and implement cloud infrastructure",
+      "Automate deployment processes",
+      "Manage and optimize Kubernetes clusters",
+      "Implement monitoring and alerting solutions",
+      "Improve system reliability and performance",
+      "Collaborate with development teams",
+      "Participate in on-call rotation",
+      "Document infrastructure and processes"
+    ],
+    workHours: "Flexible hours with some on-call responsibilities",
+    workEnvironment: "Remote-first company with distributed team",
+    teamSize: "DevOps team of 8 engineers",
+    reportingStructure: "Reports to Head of Infrastructure",
+    growthOpportunities: [
+      "Lead infrastructure projects",
+      "Cloud architecture certification support",
+      "Conference speaking opportunities",
+      "Technical blog writing",
+      "Mentorship programs"
+    ],
+    companyCulture: "Remote-first culture with emphasis on work-life balance and continuous improvement",
+    applicationProcess: [
+      "Initial technical screening",
+      "Take-home infrastructure challenge",
+      "Technical interviews",
+      "System design discussion",
+      "Team fit interview"
+    ]
+  },
+  {
+    id: "4",
+    title: "Product Designer",
+    company: "DesignHub",
+    location: "New York, NY",
+    salary: "$100,000 - $140,000",
+    type: "Full-time",
+    postedDate: "5 days ago",
+    isNew: true,
+    skills: ["Figma", "Adobe Creative Suite", "User Research", "Prototyping", "Design Systems"],
+    description: "Join our design team to create beautiful and intuitive user experiences. You'll work closely with product managers and engineers to bring our vision to life.",
+    requirements: [
+      "3+ years of product design experience",
+      "Strong portfolio demonstrating user-centered design",
+      "Experience with modern design tools (Figma, Adobe Creative Suite)",
+      "Knowledge of user research methodologies",
+      "Experience with design systems",
+      "Strong visual design skills",
+      "Excellent communication and presentation abilities",
+      "Experience working with cross-functional teams"
+    ],
+    benefits: [
+      "Competitive salary",
+      "Health and dental insurance",
+      "401(k) matching",
+      "Design conference attendance",
+      "Professional development budget",
+      "Latest design tools and software",
+      "Flexible work hours",
+      "Remote work options"
+    ],
+    responsibilities: [
+      "Create user flows and wireframes",
+      "Design high-fidelity mockups",
+      "Conduct user research and usability testing",
+      "Develop and maintain design systems",
+      "Collaborate with product and engineering teams",
+      "Present design solutions to stakeholders",
+      "Create interactive prototypes",
+      "Document design decisions"
+    ],
+    workHours: "Flexible hours with core hours of 10 AM - 4 PM EST",
+    workEnvironment: "Modern design studio with collaborative workspace",
+    teamSize: "Design team of 12 designers",
+    reportingStructure: "Reports to Head of Design",
+    growthOpportunities: [
+      "Lead design initiatives",
+      "Design system ownership",
+      "Conference speaking opportunities",
+      "Design mentorship program",
+      "Portfolio development support"
+    ],
+    companyCulture: "Creative environment focused on innovation and user-centered design",
+    applicationProcess: [
+      "Portfolio review",
+      "Initial design challenge",
+      "Team interviews",
+      "Design presentation",
+      "Final interview with leadership"
+    ]
+  },
+  {
+    id: "5",
+    title: "Data Scientist",
+    company: "AnalyticsPro",
+    location: "Chicago, IL",
+    salary: "$115,000 - $155,000",
+    type: "Full-time",
+    postedDate: "1 week ago",
+    isUrgent: true,
+    skills: ["Python", "R", "SQL", "Machine Learning", "Data Visualization", "Statistics"],
+    description: "Join our data science team to help drive business decisions through advanced analytics and machine learning. You'll work on complex data problems and build predictive models.",
+    requirements: [
+      "MS or PhD in Statistics, Mathematics, or related field",
+      "3+ years of experience in data science",
+      "Strong programming skills in Python and R",
+      "Experience with machine learning algorithms",
+      "Proficiency in SQL and data visualization",
+      "Strong statistical analysis skills",
+      "Experience with big data technologies",
+      "Excellent communication skills"
+    ],
+    benefits: [
+      "Competitive salary and bonus",
+      "Comprehensive health insurance",
+      "401(k) matching",
+      "Learning and development budget",
+      "Conference attendance",
+      "Flexible work hours",
+      "Remote work options",
+      "Annual team retreat"
+    ],
+    responsibilities: [
+      "Develop predictive models",
+      "Analyze complex datasets",
+      "Create data visualizations",
+      "Build and maintain data pipelines",
+      "Collaborate with business stakeholders",
+      "Present findings to leadership",
+      "Mentor junior data scientists",
+      "Document methodologies"
+    ],
+    workHours: "Flexible hours with core hours of 9 AM - 5 PM CST",
+    workEnvironment: "Modern office with dedicated data science lab",
+    teamSize: "Data science team of 15 analysts",
+    reportingStructure: "Reports to Head of Data Science",
+    growthOpportunities: [
+      "Lead data science projects",
+      "Advanced analytics specialization",
+      "Conference presentations",
+      "Research publication opportunities",
+      "Technical leadership track"
+    ],
+    companyCulture: "Data-driven environment focused on innovation and continuous learning",
+    applicationProcess: [
+      "Technical screening",
+      "Take-home data analysis challenge",
+      "Technical interviews",
+      "Case study presentation",
+      "Final interview with leadership"
+    ]
+  },
+  {
+    id: "6",
+    title: "Mobile Developer",
+    company: "AppTech Solutions",
+    location: "Austin, TX",
+    salary: "$100,000 - $140,000",
+    type: "Full-time",
+    postedDate: "4 days ago",
+    isNew: true,
+    skills: ["React Native", "iOS", "Android", "TypeScript", "Redux", "Firebase"],
+    description: "Join our mobile development team to create innovative mobile applications. You'll work on both iOS and Android platforms using modern cross-platform technologies.",
+    requirements: [
+      "3+ years of mobile development experience",
+      "Strong experience with React Native",
+      "Knowledge of native iOS and Android development",
+      "Experience with TypeScript",
+      "Understanding of mobile UI/UX best practices",
+      "Experience with state management (Redux)",
+      "Knowledge of mobile testing frameworks",
+      "Strong problem-solving skills"
+    ],
+    benefits: [
+      "Competitive salary",
+      "Health and dental insurance",
+      "401(k) matching",
+      "Learning and development budget",
+      "Latest development tools",
+      "Flexible work hours",
+      "Remote work options",
+      "Annual team retreat"
+    ],
+    responsibilities: [
+      "Develop mobile applications",
+      "Optimize app performance",
+      "Implement new features",
+      "Fix bugs and technical issues",
+      "Collaborate with design team",
+      "Write clean, maintainable code",
+      "Participate in code reviews",
+      "Document technical solutions"
+    ],
+    workHours: "Flexible hours with core hours of 9 AM - 5 PM CST",
+    workEnvironment: "Modern office with collaborative workspace",
+    teamSize: "Mobile development team of 10 developers",
+    reportingStructure: "Reports to Mobile Development Lead",
+    growthOpportunities: [
+      "Lead mobile projects",
+      "Cross-platform specialization",
+      "Conference speaking opportunities",
+      "Technical blog writing",
+      "Mentorship programs"
+    ],
+    companyCulture: "Innovative environment focused on mobile technology and user experience",
+    applicationProcess: [
+      "Technical screening",
+      "Take-home coding challenge",
+      "Technical interviews",
+      "System design discussion",
+      "Final interview with leadership"
+    ]
+  }
+]; 
